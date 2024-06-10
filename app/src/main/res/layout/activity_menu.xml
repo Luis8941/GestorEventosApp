@@ -33,7 +33,7 @@
         android:layout_gravity="center_vertical"
         android:gravity="center_horizontal">
         <Button
-            android:id="@+id/btn_reservar_cita"
+            android:id="@+id/btn_ver_evento"
             android:layout_width="match_parent"
             android:text="Ver Eventos"
             android:backgroundTint="@color/btn_color"

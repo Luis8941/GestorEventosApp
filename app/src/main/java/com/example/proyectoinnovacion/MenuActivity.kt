@@ -23,7 +23,17 @@ class MenuActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+
+        val btnVerEvento = findViewById<Button>(R.id.btn_ver_evento)
+        btnVerEvento.setOnClickListener{
+            goToViewEvent()
+        }
         goToLogin()
+    }
+
+    private fun goToViewEvent(){
+        val i = Intent(this, ListEventoActivity::class.java)
+        startActivity(i)
     }
 
     private fun goToLogin(){
